@@ -9,37 +9,40 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
-
   const Cards = [
     {
-     'name': "Spotify Analysis",
-     'image': "/spotify-project.png",
-     'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
-     'github':'https://github.com/MikeLikesCode/spotify-analyzer',
-     'website':'https://spotify-analysis-next.herokuapp.com/'
+      name: "Spotify Analysis",
+      image: "/spotify-project.png",
+      description:
+        "With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...",
+      github: "https://github.com/MikeLikesCode/spotify-analyzer",
+      website: "https://spotify-analysis-next.herokuapp.com/",
     },
     {
-      'name': "Ip Locator",
-      'image': "/ip-locator.png",
-      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
-      'github':'https://github.com/MikeLikesCode/ip-tracker-project',
-      'website':'https://ip-tracker-project.vercel.app/'
+      name: "Ip Locator",
+      image: "/ip-locator.png",
+      description:
+        "With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...",
+      github: "https://github.com/MikeLikesCode/ip-tracker-project",
+      website: "https://ip-tracker-project.vercel.app/",
     },
     {
-      'name': "Reach (Hackathon)",
-      'image': "/reach-project.png",
-      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
-      'github':'https://github.com/MikeLikesCode/fluffy-octo-train',
-      'website':'https://reachbusinesses.tech/'
+      name: "Reach (Hackathon)",
+      image: "/reach-project.png",
+      description:
+        "With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...",
+      github: "https://github.com/MikeLikesCode/fluffy-octo-train",
+      website: "https://reachbusinesses.tech/",
     },
     {
-      'name': "Next Pokedex",
-      'image': "/next-pokedex.png",
-      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
-      'github':'https://github.com/MikeLikesCode/next-pokedex',
-      'website':'https://next-pokedex.maikurucodes.vercel.app/'
-    }
-  ]
+      name: "Next Pokedex",
+      image: "/next-pokedex.png",
+      description:
+        "With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...",
+      github: "https://github.com/MikeLikesCode/next-pokedex",
+      website: "https://next-pokedex.maikurucodes.vercel.app/",
+    },
+  ];
 
   return (
     <Layout>
@@ -51,9 +54,13 @@ export default function Home() {
         <p className={styles.content_name}>Michael Guerrero</p>
         <h1 className={styles.content_job}>Front-end Developer</h1>
         <p className={styles.content_description}>
-          Aspiring Front-end Developer based in New York. Looking for new opportunities to learn from.
+          Aspiring Front-end Developer based in New York. Looking for new
+          opportunities to learn from.
         </p>
-       <a href="#projects"> <div className={styles.content_button}>My Projects</div> </a>
+        <a href="#projects">
+          {" "}
+          <div className={styles.content_button}>My Projects</div>{" "}
+        </a>
       </div>
 
       <div id="about" className={styles.about}>
@@ -95,15 +102,33 @@ export default function Home() {
             <ul>
               <li>
                 {" "}
-                <a target="_blank" href="https://www.linkedin.com/in/michael-guerrero-3801a0168/">  <FontAwesomeIcon icon={faLinkedin} />{" "} </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/michael-guerrero-3801a0168/"
+                >
+                  {" "}
+                  <FontAwesomeIcon icon={faLinkedin} />{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <a target="_blank" href="https://www.instagram.com/mikelikescode/"> <FontAwesomeIcon icon={faInstagram} />{" "}</a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/mikelikescode/"
+                >
+                  {" "}
+                  <FontAwesomeIcon icon={faInstagram} />{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100007482829059"> <FontAwesomeIcon icon={faFacebook} />{" "}</a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100007482829059"
+                >
+                  {" "}
+                  <FontAwesomeIcon icon={faFacebook} />{" "}
+                </a>
               </li>
             </ul>
           </div>
@@ -117,22 +142,72 @@ export default function Home() {
             These are projects I'm working on with all the new knowledge I'm
             learning along the way in college and on my own.
           </p>
-          </div>
+        </div>
 
-          <div className={styles.projects_cards}>
-            {Cards.map(({name,image,website,github}) => (
-              <div className={styles.projects_card}>
-                <img src={image}/>
-                <h1>{name}</h1> 
+        <div className={styles.projects_cards}>
+          {Cards.map(({ name, image, website, github }) => (
+            <div className={styles.projects_card}>
+              <img src={image} />
+              <h1>{name}</h1>
 
-                <div className={styles.projects_card_links}>
-                  <a target="_blank" href={website}>Website</a>
-                  <a target="_blank" href={github}>Github</a>
-                </div>
+              <div className={styles.projects_card_links}>
+                <a target="_blank" href={website}>
+                  Website
+                </a>
+                <a target="_blank" href={github}>
+                  Github
+                </a>
               </div>
-            ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.journey}>
+        <div className={styles.journey_heading}>
+          <h1 className={styles.journey_head}>Journey</h1>
+        </div>
+        <div className={styles.journey_cards_container}>
+          <div className={styles.journey_cards}>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>01</div>
+              <div className={styles.journey_card_description}>
+                Started the Software Engineering pathway in High School
+              </div>
+            </div>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>02</div>
+              <div className={styles.journey_card_description}>
+                Joined Code Nation Foundation program to learn basics
+              </div>
+            </div>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>03</div>
+              <div className={styles.journey_card_description}>
+                Joined Code Nation Fellowship Program to learn advanced JS
+              </div>
+            </div>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>04</div>
+              <div className={styles.journey_card_description}>
+                Joined the Google CSSI program during the summer
+              </div>
+            </div>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>05</div>
+              <div className={styles.journey_card_description}>
+                Started doing freelance work making JAMstack websites for
+                clients
+              </div>
+            </div>
+            <div className={styles.journey_card}>
+              <div className={styles.journey_card_number}>06</div>
+              <div className={styles.journey_card_description}>
+                Started College in CUNY Queens College doing Computer Science
+              </div>
+            </div>
           </div>
-       
+        </div>
       </div>
     </Layout>
   );

@@ -162,16 +162,19 @@ span.about_head::after {
   margin-left: 0px;
 }
 
+.projects{
+  padding: 8vh 0px;
+}
 .projects_head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8vh;
+
 }
 
 .projects_head h1:first-child {
   margin: 0px;
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: #555b6e;
 }
 
@@ -201,9 +204,9 @@ span.about_head::after {
 
 .projects_card h1{
   color:#555B6E;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
-  margin-bottom:5px;
+  margin-bottom:0px;
 }
 
 .projects_card img{
@@ -213,6 +216,68 @@ span.about_head::after {
 
 .projects_card_links a{
   margin: 0px 5px;
+  color:#555B6E;
+  font-weight: 500;
+}
+
+.journey{
+ 
+  padding: 10vh 0px;
+  background-color:#555B6E;
+  display:grid;
+  grid-template-columns: 5% 90%;
+  align-items: center;
+  position: relative;
+}
+
+.journey_heading{
+  position:relative;
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 45vh;
+}
+
+.journey_head{
+
+  position: absolute;
+  left: -160px;
+  transform: rotate(-90deg);
+  margin:0px;
+  color:white;
+  font-size: 6rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+}
+
+.journey_cards_container{
+  margin: 0px 50px;
+}
+.journey_cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 5vh 8vw;
+  
+}
+
+.journey_card{
+  background-color:#676E87;
+  padding:25px;
+  color:white;
+}
+
+.journey_card_number{
+  margin:0px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.journey_card_description{
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom:80px;
 }
 
 @media screen and (max-width: 600px) {
@@ -254,6 +319,11 @@ span.about_head::after {
   .about_socials {
      padding: 25px 25px;
   }
+
+  .about_socials h1{
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
   .about_email {
      font-size: 1.5rem;
   }
@@ -271,5 +341,17 @@ span.about_head::after {
   
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*Journey Section*/
+  .journey{
+    grid-template-columns: 1fr;
+  }
+  .journey_heading{
+    display:none;
+  }
+
+  .journey_cards{
+    grid-template-columns: 1fr;
   }
 }
