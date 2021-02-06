@@ -86,7 +86,7 @@ export default function Home() {
           </p>
 
           <span className={styles.about_email}>
-            mike@mikelikescode.com{" "}
+            <a href="mailto:maikurusama@gmail.com">maikurusama@gmail.com</a>{" "}
             <FontAwesomeIcon
               className={styles.arrowRight}
               icon={faArrowRight}
