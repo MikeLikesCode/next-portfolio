@@ -6,6 +6,27 @@ export default function Header() {
     <div className={styles.container}>
       <Head>
         <title>Michael Guerrero</title>
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173055637-1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163332503-1"></script>
+              <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'UA-173055637-1');
+              </script>
+              `,
+          }}
+        />
+
+<script>
+ 
+</script>
       </Head>
       <div className={styles.leftNav}>
         <h1>Michael <br/> <span>Guerrero</span></h1>
