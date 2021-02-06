@@ -1,65 +1,140 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from "../components/Layout/layout";
+import styles from "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
+
+  const Cards = [
+    {
+     'name': "Spotify Analysis",
+     'image': "/spotify-project.png",
+     'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
+     'github':'https://github.com/MikeLikesCode/spotify-analyzer',
+     'website':'https://spotify-analysis-next.herokuapp.com/'
+    },
+    {
+      'name': "Ip Locator",
+      'image': "/ip-locator.png",
+      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
+      'github':'https://github.com/MikeLikesCode/ip-tracker-project',
+      'website':'https://ip-tracker-project.vercel.app/'
+    },
+    {
+      'name': "Reach (Hackathon)",
+      'image': "/reach-project.png",
+      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
+      'github':'https://github.com/MikeLikesCode/fluffy-octo-train',
+      'website':'https://reachbusinesses.tech/'
+    },
+    {
+      'name': "Next Pokedex",
+      'image': "/next-pokedex.png",
+      'description': 'With this project I used the Spotify api to call data about a users top songs and display them as well as showing off...',
+      'github':'https://github.com/MikeLikesCode/next-pokedex',
+      'website':'https://next-pokedex.maikurucodes.vercel.app/'
+    }
+  ]
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div className={styles.frame}>
+        <img src="/profile.png" />
+      </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <div className={styles.content}>
+        <p className={styles.content_name}>Michael Guerrero</p>
+        <h1 className={styles.content_job}>Front-end Developer</h1>
+        <p className={styles.content_description}>
+          I help companies get their brand out by making websites that users can
+          use and enjoy.
         </p>
+        <div className={styles.content_button}>My Projects</div>
+      </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+      <div className={styles.about}>
+        <div className={styles.about_learning}>
+          <span className={styles.about_head}>About Me</span>
+          <h1>
+            Learning is hard at times. Though keeping the right mindset helps a
+            long way.
+          </h1>
+          <p>
+            I'm currently a Computer Science major that goes to CUNY Queens
+            College. I've been developing websites and web apps personally and
+            in programs throughout my high school years and have become more
+            interested in learning more.
+          </p>
+          <div className={styles.about_experince}>
+            <span>4</span>{" "}
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              {" "}
+              Years of <br /> Experince
             </p>
-          </a>
+          </div>
         </div>
-      </main>
+        <div className={styles.about_socials}>
+          <h1>Any Type of Query & Discussion.</h1>
+          <p>
+            Need to ask me what type of toast I like or a business related
+            question? Feel free to contact me below.{" "}
+          </p>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+          <span className={styles.about_email}>
+            mike@mikelikescode.com{" "}
+            <FontAwesomeIcon
+              className={styles.arrowRight}
+              icon={faArrowRight}
+            />
+          </span>
+          <div className={styles.about_icons}>
+            <ul>
+              <li>
+                {" "}
+                <FontAwesomeIcon icon={faLinkedin} />{" "}
+              </li>
+              <li>
+                {" "}
+                <FontAwesomeIcon icon={faInstagram} />{" "}
+              </li>
+              <li>
+                {" "}
+                <FontAwesomeIcon icon={faFacebook} />{" "}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.projects}>
+        <div className={styles.projects_head}>
+          <h1>My Projects</h1>
+          <p>
+            These are projects I'm working on with all the new knowledge I'm
+            learning along the way in college and on my own.
+          </p>
+          </div>
+
+          <div className={styles.projects_cards}>
+            {Cards.map(({name,image,website,github}) => (
+              <div className={styles.projects_card}>
+                <img src={image}/>
+                <h1>{name}</h1> 
+
+                <div className={styles.projects_card_links}>
+                  <a target="_blank" href={website}>Website</a>
+                  <a target="_blank" href={github}>Github</a>
+                </div>
+              </div>
+            ))}
+          </div>
+       
+      </div>
+    </Layout>
+  );
 }
