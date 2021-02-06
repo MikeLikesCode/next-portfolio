@@ -163,7 +163,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.journey}>
+      <div id="journey" className={styles.journey}>
         <div className={styles.journey_heading}>
           <h1 className={styles.journey_head}>Journey</h1>
         </div>
