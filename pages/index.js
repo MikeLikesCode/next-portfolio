@@ -51,8 +51,7 @@ export default function Home() {
         <p className={styles.content_name}>Michael Guerrero</p>
         <h1 className={styles.content_job}>Front-end Developer</h1>
         <p className={styles.content_description}>
-          I help companies get their brand out by making websites that users can
-          use and enjoy.
+          Aspiring Front-end Developer based in New York. Looking for new opportunities to learn from.
         </p>
         <div className={styles.content_button}>My Projects</div>
       </div>
