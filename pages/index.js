@@ -57,7 +57,7 @@ export default function Home() {
         <div className={styles.content_button}>My Projects</div>
       </div>
 
-      <div className={styles.about}>
+      <div id="about" className={styles.about}>
         <div className={styles.about_learning}>
           <span className={styles.about_head}>About Me</span>
           <h1>
@@ -96,22 +96,22 @@ export default function Home() {
             <ul>
               <li>
                 {" "}
-                <FontAwesomeIcon icon={faLinkedin} />{" "}
+                <a target="_blank" href="https://www.linkedin.com/in/michael-guerrero-3801a0168/">  <FontAwesomeIcon icon={faLinkedin} />{" "} </a>
               </li>
               <li>
                 {" "}
-                <FontAwesomeIcon icon={faInstagram} />{" "}
+                <a target="_blank" href="https://www.instagram.com/mikelikescode/"> <FontAwesomeIcon icon={faInstagram} />{" "}</a>
               </li>
               <li>
                 {" "}
-                <FontAwesomeIcon icon={faFacebook} />{" "}
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100007482829059"> <FontAwesomeIcon icon={faFacebook} />{" "}</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className={styles.projects}>
+      <div id="projects" className={styles.projects}>
         <div className={styles.projects_head}>
           <h1>My Projects</h1>
           <p>

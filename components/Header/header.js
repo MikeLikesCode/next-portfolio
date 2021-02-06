@@ -8,10 +8,10 @@ export default function Header() {
       </div>
       <div className={styles.rightNav}>
         <ul>
-         <li>About</li>
-         <li>Projects</li>
-         <li>Journey</li>
-         <li>Resume</li>
+         <a href="#about"><li>About</li></a>
+         <a href="#projects"><li>Projects</li></a>
+         {/* <a><li>Journey</li></a> */}
+         <a href="https://drive.google.com/file/d/1jeqlsNSxGg8CORzw0FYevfFQDPbrUnWK/view?usp=sharing"><li>Resume</li></a>
         </ul>
       </div>
     </div>
