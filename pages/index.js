@@ -53,7 +53,7 @@ export default function Home() {
         <p className={styles.content_description}>
           Aspiring Front-end Developer based in New York. Looking for new opportunities to learn from.
         </p>
-        <div className={styles.content_button}>My Projects</div>
+       <a href="#projects"> <div className={styles.content_button}>My Projects</div> </a>
       </div>
 
       <div id="about" className={styles.about}>
