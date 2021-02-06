@@ -1,8 +1,12 @@
 import styles from "./header.module.css";
+import Head from 'next/head'
 
 export default function Header() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Michael Guerrero</title>
+      </Head>
       <div className={styles.leftNav}>
         <h1>Michael <br/> <span>Guerrero</span></h1>
       </div>
