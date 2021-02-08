@@ -49,7 +49,7 @@ export default function Home() {
     <Layout>
       <div className={styles.frame}>
         <div className={styles.frame_container}>
-        <Image className={styles.frame_image} layout="fixed" width={220} height={250} src="/profile.png" />
+        <Image className={styles.frame_image} layout="fixed" width={195} height={250} src="/profile.png" />
         </div>      
       </div>
 

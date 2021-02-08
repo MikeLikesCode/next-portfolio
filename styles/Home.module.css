@@ -349,9 +349,21 @@ span.about_head::after {
   /*Journey Section*/
   .journey{
     grid-template-columns: 1fr;
+    padding: 5vh 0px;
+    justify-content:center;
   }
   .journey_heading{
-    display:none;
+    justify-content: center;
+    height:10vh;
+    margin-bottom:25px;
+  }
+
+  .journey_head{
+    position:initial;
+    text-transform: none;
+    transform: rotate(0);
+    font-size:3.3rem;
+    font-weight: bold;
   }
 
   .journey_cards{
