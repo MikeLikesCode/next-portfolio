@@ -8,7 +8,7 @@ export default function Header() {
         <title>Michael Guerrero</title>
 
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173055637-1"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173055637-1"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,7 +22,7 @@ export default function Header() {
               </script>
               `,
           }}
-        />
+        ></script> */}
       </Head>
       <div className={styles.leftNav}>
         <h1>Michael <br/> <span>Guerrero</span></h1>

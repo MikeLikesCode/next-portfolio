@@ -45,8 +45,11 @@
   justify-content: center;
 }
 
-.frame img {
-  width: 10%;
+.frame_container{
+  height:250px;
+}
+
+.frame_image  {
   border-radius: 8px;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.095);
 }

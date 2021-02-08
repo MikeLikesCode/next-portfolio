@@ -7,6 +7,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Image from 'next/image'
 
 export default function Home() {
   const Cards = [
@@ -47,7 +48,9 @@ export default function Home() {
   return (
     <Layout>
       <div className={styles.frame}>
-        <img src="/profile.png" />
+        <div className={styles.frame_container}>
+        <Image className={styles.frame_image} layout="fixed" width={220} height={250} src="/profile.png" />
+        </div>      
       </div>
 
       <div className={styles.content}>
@@ -147,7 +150,7 @@ export default function Home() {
         <div className={styles.projects_cards}>
           {Cards.map(({ name, image, website, github }) => (
             <div className={styles.projects_card}>
-              <img src={image} />
+              <Image layout="fixed" width={350} height={180} src={image} />
               <h1>{name}</h1>
 
               <div className={styles.projects_card_links}>
