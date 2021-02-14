@@ -283,6 +283,46 @@ span.about_head::after {
   padding-bottom:80px;
 }
 
+@media screen and (max-width:1475px){
+  .projects_cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media screen and (max-width:1125px){
+  .projects_cards{
+    margin: 0px 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .journey{
+    grid-template-columns: 1fr;
+    padding: 5vh 0px;
+    justify-content:center;
+  }
+  .journey_heading{
+    justify-content: center;
+    height:10vh;
+    margin-bottom:25px;
+  }
+
+  .journey_head{
+    position:initial;
+    text-transform: none;
+    transform: rotate(0);
+    font-size:3.3rem;
+    font-weight: bold;
+  }
+
+  .journey_cards{
+    grid-template-columns: 1fr;
+  }
+  .about {
+    grid-template-columns: 1fr;
+ }
+  
+}
+
 @media screen and (max-width: 600px) {
   /* Top Section */
   .frame img {
