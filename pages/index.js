@@ -7,7 +7,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   const Cards = [
@@ -49,8 +49,14 @@ export default function Home() {
     <Layout>
       <div className={styles.frame}>
         <div className={styles.frame_container}>
-        <Image className={styles.frame_image} layout="fixed" width={195} height={250} src="/profile.png" />
-        </div>      
+          <Image
+            className={styles.frame_image}
+            layout="fixed"
+            width={195}
+            height={250}
+            src="/profile.png"
+          />
+        </div>
       </div>
 
       <div className={styles.content}>
@@ -206,7 +212,8 @@ export default function Home() {
             <div className={styles.journey_card}>
               <div className={styles.journey_card_number}>06</div>
               <div className={styles.journey_card_description}>
-                Started College in CUNY Queens College doing Computer Science
+                Seeking new opportunities to expand my experience and 
+                show what I have learned.
               </div>
             </div>
           </div>
