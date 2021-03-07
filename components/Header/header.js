@@ -32,7 +32,7 @@ export default function Header() {
          <a href="#about"><li>About</li></a>
          <a href="#projects"><li>Projects</li></a>
          <a href="#journey"><li>Journey</li></a>
-         <a href="https://drive.google.com/file/d/1jeqlsNSxGg8CORzw0FYevfFQDPbrUnWK/view?usp=sharing"><li>Resume</li></a>
+         <a href="https://drive.google.com/file/d/1HWSVkf4C5Ha4KiEWHiBLqZbK8b9wWxYb/view?usp=sharing"><li>Resume</li></a>
         </ul>
       </div>
     </div>
